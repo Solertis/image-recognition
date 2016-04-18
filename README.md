@@ -11,6 +11,7 @@ User Guide
 OpenALPR includes a command line utility.  Simply typing "alpr [image file path]" is enough to get started recognizing license plate images.
 
 For example, the following output is created by analyzing this image:
+
 ![Plate Image](http://www.openalpr.com/images/demoscreenshots/plate3.png "Input image")
 
 
