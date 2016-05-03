@@ -3,7 +3,7 @@ image-recognition
 
 I have published a PHP script that takes advantage of the *Automatic License Plate Recognition* library written in C++ and processes user requests, connects to the ALPR API, and then retrieves results and processes the image according to the response. 
 
-https://www.snowflakeco.com/live/software/recognition/api/CLOUD_ANALYZE.php?URL={ImageURL}
+http://www.snowflakeco.com/live/software/recognition/api/CLOUD_ANALYZE.php?URL={ImageURL}
 
 
 ![Plate Image](ExampleResults.png "Input image")
