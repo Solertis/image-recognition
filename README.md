@@ -1,6 +1,9 @@
 openalpr
 ========
 
+--- I will soon be adding my PHP API connection to this script - Pablo Fernandez.
+
+
 OpenALPR is an open source *Automatic License Plate Recognition* library written in C++ with bindings in C#, Java, Node.js, Go, and Python.  The library analyzes images and video streams to identify license plates.  The output is the text representation of any license plate characters.
 
 Check out a live online demo here: http://www.openalpr.com/demo-image.html
