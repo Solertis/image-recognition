@@ -4,6 +4,9 @@ date_default_timezone_set('America/Los_Angeles');
 $Image = $_GET['URL'];
 $Image_Unique = date("mdYhisA");
 
+// DEMO API KEYS
+// CAN BE CHANGED FOR CUSTOM APPLICATION
+
 $post = [
     'secret_key' => 'sk_DEMODEMODEMODEMODEMODEMO',
     'tasks' => 'plate',
@@ -20,6 +23,7 @@ curl_close($ch);
 
 $json = json_decode($response, true);
 
+// ADDITIONAL REQUEST VARIABLES
 //$json['color'][0]['confidence']
 //$json['color'][0]['value']
 //$json['makemodel'][0]['confidence']
@@ -42,6 +46,7 @@ $PLATE_2_y = $json['plate']['results'][0]['coordinates'][2][y];
 $PLATE_3_x = $json['plate']['results'][0]['coordinates'][3][x];
 $PLATE_3_y = $json['plate']['results'][0]['coordinates'][3][y];
 
+//CURL POST
   $curl = curl_init();
   curl_setopt($curl, CURLOPT_URL,"http://www.snowflakeco.com/live/software/recognition/api/GENERATE_IMAGE.php");
   curl_setopt($curl, CURLOPT_POST, 1);
@@ -49,7 +54,7 @@ $PLATE_3_y = $json['plate']['results'][0]['coordinates'][3][y];
   curl_exec ($curl);
   curl_close ($curl);
 ?>
-
+<!-- Display Image -->
 <img src="http://www.snowflakeco.com/live/software/recognition/api/capture_car/<?php echo $Image_Unique; ?>.jpg" height="400">
 <BR>
 RUNNING
