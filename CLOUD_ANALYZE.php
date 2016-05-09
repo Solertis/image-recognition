@@ -47,6 +47,7 @@ $PLATE_3_x = $json['plate']['results'][0]['coordinates'][3][x];
 $PLATE_3_y = $json['plate']['results'][0]['coordinates'][3][y];
 
 //CURL POST
+//POST FIELDS, COORDINATE RESULTS, PLATE, PLATE NUMBER, IMAGE URL
   $curl = curl_init();
   curl_setopt($curl, CURLOPT_URL,"http://www.snowflakeco.com/live/software/recognition/api/GENERATE_IMAGE.php");
   curl_setopt($curl, CURLOPT_POST, 1);
